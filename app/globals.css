@@ -78,3 +78,11 @@ h1 {
     @apply bg-background text-foreground;
   }
 }
+
+.bg-gradient {
+  background: linear-gradient(to top left, #247BA0, white);
+}
+
+.box-bg {
+  background: rgba(255, 255, 255, 0.25);
+}
