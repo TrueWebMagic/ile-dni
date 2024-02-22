@@ -2,7 +2,7 @@
  
 import * as React from "react"
 import { CalendarIcon } from "@radix-ui/react-icons"
-import { addDays, differenceInDays, differenceInHours, format } from "date-fns"
+import { differenceInDays, format } from "date-fns"
  
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -15,7 +15,7 @@ import {
 
 import { pl } from "date-fns/locale";
 
-export default function Home({className}: React.HTMLAttributes<HTMLDivElement>) {
+export default function Home() {
   const [date, setDate] = React.useState<Date>();
 
   const daysDifference = date ? Math.abs(differenceInDays(new Date(), date || new Date()) + 1) : 0;
@@ -26,7 +26,7 @@ export default function Home({className}: React.HTMLAttributes<HTMLDivElement>) 
 
       <div className="flex flex-col gap-5 items-center mt-20 sm:flex-row">
         <h2 className="">Wybierz datę: </h2>
-        <div className={cn("grid gap-2", className)}>
+        <div className={cn("grid gap-2")}>
           <Popover>
             <PopoverTrigger asChild>
               <Button
