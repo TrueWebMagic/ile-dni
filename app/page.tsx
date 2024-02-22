@@ -18,7 +18,7 @@ import { pl } from "date-fns/locale";
 export default function Home() {
   const [date, setDate] = React.useState<Date>();
 
-  const daysDifference = date ? Math.abs(differenceInDays(new Date(), date || new Date()) + 1) : 0;
+  const daysDifference = date ? Math.abs(differenceInDays(new Date(), date || new Date())) + 1 : 0;
 
   return (
     <main className="flex min-h-screen flex-col items-center pt-24">
