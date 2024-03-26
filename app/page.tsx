@@ -35,6 +35,20 @@ export default function Home() {
     new Date(2024, 10, 11),
     new Date(2024, 11, 25),
     new Date(2024, 11, 26),
+
+    new Date(2025, 0, 1),
+    new Date(2025, 0, 6),
+    new Date(2025, 3, 20),
+    new Date(2025, 3, 21),
+    new Date(2025, 4, 1),
+    new Date(2025, 4, 3),
+    new Date(2025, 5, 8),
+    new Date(2025, 5, 19),
+    new Date(2025, 7, 15),
+    new Date(2025, 10, 1),
+    new Date(2025, 10, 11),
+    new Date(2025, 11, 25),
+    new Date(2025, 11, 26),
   ];
 
   let daysOffCount = 0;
